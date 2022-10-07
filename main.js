@@ -51,7 +51,12 @@ window.addEventListener('onbeforeunload', queryToApi())
 
 inputForm.addEventListener('submit', e => {
   e.preventDefault()
-  wordDefinitionContainer.innerHTML = ""
+  
   wordToDefine = document.getElementById('word-search-input').value
-  queryToApi()
+  if(wordToDefine == ''){
+    return;
+  } else {
+    wordDefinitionContainer.innerHTML = ""
+    queryToApi()
+  }
   })
