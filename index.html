@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WorDefine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div class="container">
+      <h1>Wor<span class="def-color">Define</span></h1>
+      <form action="submit" id="submit-form" method="POST">
+        <input id="word-search-input" class="input-field" type="text" placeholder="Enter a word" value="hello" onClick="this.select();">
+        <button class="btn" type="submit" form="submit-form">Submit</button>
+      </form>
+      
+      <h2 id="the-word"></h2>
+      <p id="word-pronounce" class="word-color pron"></p>
+      <div id="def-container" class="def-container">
+      </div>
+      
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

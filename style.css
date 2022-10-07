@@ -1,0 +1,139 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  max-width: 800px;
+}
+
+.def-container {
+  text-align: left;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-field {
+  position:initial;
+  background-color: #242424;
+  color: #bd287c;
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  border: 1px solid transparent;
+  border-bottom: 2px solid #333;
+  width: 100px;
+  text-align: center;
+  transition: ease-in-out, width .35s ease-in-out;
+  font-size: 1rem;
+}
+
+.input-field:focus, .input-field:active {
+  background-color: #333;
+  width: 200px;
+  outline: none;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid #219c7b;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  display: inline-block;
+  margin: 0 1em;
+  color: #219c7b;
+  outline: none;
+}
+button:hover {
+  border-color: #bd287c;
+  color: #bd287c;
+}
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
+h1 {
+  font-family: 'Sedgwick Ave', cursive;
+  text-align: center;
+  font-size: 5rem;
+  color: #bd287c;
+}
+
+.def-color {
+  color: #219c7b;
+}
+.word-color {
+  color: #bd287c;
+}
+
+.pron {
+  font-size: 1.2em;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.def {
+  font-size: 1.8em;
+  border-left: 2px solid #bd287c;
+  padding-left: .3em;
+  padding-bottom: .3em;
+}
+
+br {
+  display: block;
+  margin-top: .5em;
+  content: '';
+}
+
+.part-of-speech {
+  color: #bd287c;
+  font-weight: 600;
+  margin-right: .3em;
+}
+
+.line-break {
+  height: 1px;
+  background-color: #bd287c;
+  border: none;
+  width: 50%;
+}
+
+h2 {
+  font-size: 4rem;
+  color: #bd287c;
+  margin: 1em 0 .5em 0;
+}
