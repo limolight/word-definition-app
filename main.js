@@ -13,7 +13,6 @@ var queryToApi = function() {
   fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${wordToDefine}`)
   .then(response => response.json())
   .then(function(json) {
-    console.log(json)
     if(!Array.isArray(json)){
       wordPronounce.innerHTML = `${wordToDefine} is not a word in English language. Please try a different word.`
     }
